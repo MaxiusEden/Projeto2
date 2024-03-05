@@ -1,0 +1,1 @@
+entidadesRetangulo.Retângulo
