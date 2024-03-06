@@ -10,6 +10,10 @@ import entidades.Piramide;
  */
 public class calcularPiramide extends javax.swing.JInternalFrame {
 
+    private static void DISPOSE_ON_CLOSE() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
     /**
      * Creates new form calcularPiramide
      */
@@ -26,6 +30,8 @@ public class calcularPiramide extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jMenu1 = new javax.swing.JMenu();
+        jMenu2 = new javax.swing.JMenu();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -34,6 +40,12 @@ public class calcularPiramide extends javax.swing.JInternalFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         JTextArea_SaidaPiramide = new javax.swing.JTextArea();
         jButton1 = new javax.swing.JButton();
+
+        jMenu1.setText("jMenu1");
+
+        jMenu2.setText("jMenu2");
+
+        setClosable(true);
 
         jLabel1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabel1.setText("Volume de Pirâmides");
@@ -123,6 +135,8 @@ public class calcularPiramide extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 }

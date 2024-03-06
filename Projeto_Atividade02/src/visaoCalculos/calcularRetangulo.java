@@ -35,6 +35,8 @@ public class calcularRetangulo extends javax.swing.JInternalFrame {
         JTextArea_SaidaRetangulo = new javax.swing.JTextArea();
         jButton1 = new javax.swing.JButton();
 
+        setClosable(true);
+
         jLabel1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabel1.setText("Área e Perímetro de Retângulos");
 

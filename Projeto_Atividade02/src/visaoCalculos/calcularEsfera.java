@@ -33,6 +33,8 @@ public class calcularEsfera extends javax.swing.JInternalFrame {
         JTextArea_SaidaEsfera = new javax.swing.JTextArea();
         jButton1 = new javax.swing.JButton();
 
+        setClosable(true);
+
         jLabel1.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel1.setText("Insira o raio da esfera:");
 
