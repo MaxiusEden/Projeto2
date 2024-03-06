@@ -4,8 +4,6 @@
  */
 package visaoCalculos;
 
-import java.awt.Component;
-
 /**
  *
  * @author puc

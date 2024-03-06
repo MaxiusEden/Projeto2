@@ -102,7 +102,7 @@ public class calcularEsfera extends javax.swing.JInternalFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         Esfera p1 = new Esfera();
-        p1.raio = Integer.parseInt(JTextField_RaioEsfera.getText());
+        p1.raio = Float.parseFloat(JTextField_RaioEsfera.getText());
         
         String saida = "Área Calculada:\n" + p1.calcularArea();
         saida+= "\nVolume Calculado:\n" + p1.calcularVolume();
