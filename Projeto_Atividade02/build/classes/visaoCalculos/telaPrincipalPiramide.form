@@ -11,6 +11,9 @@
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="MenuPiramide">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/entidades/grafico-de-piramide.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Volume Pir&#xe2;mide"/>
               </Properties>
               <Events>
@@ -19,6 +22,9 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="MenuEsfera">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/entidades/icons8-esfera-16.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="&#xc1;rea e Volume Esfera"/>
               </Properties>
               <Events>
@@ -27,10 +33,46 @@
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="MenuRetangulo">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/entidades/icons8-ret&#xe2;ngulo-16.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="&#xc1;rea e Per&#xed;metro Ret&#xe2;ngulo"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MenuRetanguloActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="MenuParalelepipedo">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/entidades/paralelepipedoIcon.png"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Volume e &#xc1;rea Paralelep&#xed;pedo"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MenuParalelepipedoActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="MenuCilindro">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/entidades/cilindroIcon.png"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="&#xc1;reas e Volume Cilindro"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MenuCilindroActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem3">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/entidades/coneIcon.png"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="&#xc1;reas e Volume Cone"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem3ActionPerformed"/>
               </Events>
             </MenuItem>
           </SubComponents>

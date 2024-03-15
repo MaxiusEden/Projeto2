@@ -37,6 +37,9 @@ public class telaPrincipalPiramide extends javax.swing.JFrame {
         MenuPiramide = new javax.swing.JMenuItem();
         MenuEsfera = new javax.swing.JMenuItem();
         MenuRetangulo = new javax.swing.JMenuItem();
+        MenuParalelepipedo = new javax.swing.JMenuItem();
+        MenuCilindro = new javax.swing.JMenuItem();
+        jMenuItem3 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -72,6 +75,7 @@ public class telaPrincipalPiramide extends javax.swing.JFrame {
 
         jMenu2.setText("Cálculos");
 
+        MenuPiramide.setIcon(new javax.swing.ImageIcon(getClass().getResource("/entidades/grafico-de-piramide.png"))); // NOI18N
         MenuPiramide.setText("Volume Pirâmide");
         MenuPiramide.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -80,6 +84,7 @@ public class telaPrincipalPiramide extends javax.swing.JFrame {
         });
         jMenu2.add(MenuPiramide);
 
+        MenuEsfera.setIcon(new javax.swing.ImageIcon(getClass().getResource("/entidades/icons8-esfera-16.png"))); // NOI18N
         MenuEsfera.setText("Área e Volume Esfera");
         MenuEsfera.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -88,6 +93,7 @@ public class telaPrincipalPiramide extends javax.swing.JFrame {
         });
         jMenu2.add(MenuEsfera);
 
+        MenuRetangulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/entidades/icons8-retângulo-16.png"))); // NOI18N
         MenuRetangulo.setText("Área e Perímetro Retângulo");
         MenuRetangulo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -95,6 +101,33 @@ public class telaPrincipalPiramide extends javax.swing.JFrame {
             }
         });
         jMenu2.add(MenuRetangulo);
+
+        MenuParalelepipedo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/entidades/paralelepipedoIcon.png"))); // NOI18N
+        MenuParalelepipedo.setText("Volume e Área Paralelepípedo");
+        MenuParalelepipedo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MenuParalelepipedoActionPerformed(evt);
+            }
+        });
+        jMenu2.add(MenuParalelepipedo);
+
+        MenuCilindro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/entidades/cilindroIcon.png"))); // NOI18N
+        MenuCilindro.setText("Áreas e Volume Cilindro");
+        MenuCilindro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MenuCilindroActionPerformed(evt);
+            }
+        });
+        jMenu2.add(MenuCilindro);
+
+        jMenuItem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/entidades/coneIcon.png"))); // NOI18N
+        jMenuItem3.setText("Áreas e Volume Cone");
+        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem3ActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuItem3);
 
         jMenuBar1.add(jMenu2);
 
@@ -137,6 +170,24 @@ public class telaPrincipalPiramide extends javax.swing.JFrame {
         obj.setVisible(true);
     }//GEN-LAST:event_MenuRetanguloActionPerformed
 
+    private void MenuParalelepipedoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuParalelepipedoActionPerformed
+        calcularParalelepipedo obj = new calcularParalelepipedo();
+        Painel.add(obj);
+        obj.setVisible(true);
+    }//GEN-LAST:event_MenuParalelepipedoActionPerformed
+
+    private void MenuCilindroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuCilindroActionPerformed
+       calcularCilindro obj = new calcularCilindro();
+       Painel.add(obj);
+       obj.setVisible(true);
+    }//GEN-LAST:event_MenuCilindroActionPerformed
+
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+       calcularCone obj = new calcularCone();
+       Painel.add(obj);
+       obj.setVisible(true);
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -167,7 +218,9 @@ public class telaPrincipalPiramide extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenuItem MenuCilindro;
     private javax.swing.JMenuItem MenuEsfera;
+    private javax.swing.JMenuItem MenuParalelepipedo;
     private javax.swing.JMenuItem MenuPiramide;
     private javax.swing.JMenuItem MenuRetangulo;
     private javax.swing.JDesktopPane Painel;
@@ -175,5 +228,6 @@ public class telaPrincipalPiramide extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem3;
     // End of variables declaration//GEN-END:variables
 }
